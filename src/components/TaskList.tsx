@@ -35,7 +35,7 @@ export function TaskList() {
     //na que o id for igual, ele vai inverter o valor do IsComplete
     // ... sempre copia valor para um novo objeto, no caso aqui passa o selecionado
     const taskSelecionada = tasks.map(task => task.id === id ? {
-        ...task,isComplete : !task.isComplete 
+        ...task, isComplete : !task.isComplete 
     }: task)
 
     setTasks(taskSelecionada)
